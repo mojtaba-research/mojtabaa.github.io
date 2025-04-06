@@ -1,49 +1,69 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+## About Me
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+I am Mojtaba Abdolmaleki, a Ph.D. candidate in Technology and Operations at the Ross School of Business, University of Michigan, Ann Arbor. I also hold a Ph.D. in Transportation Systems Engineering (2023) from the same institution, an MSc in Industrial & Operations Engineering (2021), and dual B.Sc. degrees in Mathematics and Civil Engineering (2018) from Sharif University of Technology. As a US Permanent Resident, I am driven by a passion for advancing research at the intersection of operations management and strategic decision-making.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+My current research focuses on designing dynamic experimentation, inspection, and statistical tests in strategic environments—a pursuit that integrates online decision-making, statistical methodologies, and operational efficiency. I leverage tools like stochastic systems analysis, approximation algorithms, online learning, and large deviation analysis to address complex challenges in these areas. My work has been recognized with honors such as the Rackham Predoctoral Fellowship (2022) and membership in the Tau Beta Pi Honor Society.
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+**Email**: [mojtabaa@umich.edu](mailto:mojtabaa@umich.edu) | **Phone**: +1 (734) 881-5989
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+This website, built with the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on [GitHub Pages](https://pages.github.com), showcases my academic journey.
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+## Education
+- **Ph.D. in Technology and Operations** (2024–present), Ross School of Business, University of Michigan, Ann Arbor  
+- **Ph.D. in Transportation Systems Engineering** (2023), University of Michigan, Ann Arbor  
+- **MSc in Industrial & Operations Engineering** (2021), University of Michigan, Ann Arbor (GPA: 4.2/4.0)  
+- **B.Sc. in Mathematics and Civil Engineering** (2018), Sharif University of Technology (GPA: 3.92/4.0; Math GPA: 4.0/4.0)
 
-**Markdown generator**
+## Publications
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+### Work in Progress
+1. Abdolmaleki, M., Chao, X., Radvand, T., Yin, Y. "Joint pricing and delayed empty relocation policies for ride-sourcing systems." Under preparation for submission.  
+   - *Notes*: Presented at INFORMS RMP Conference (2024), UCI (2024), NYU Stern (2024), MIT IDSS (2023), UMN ISyE (2023).  
+2. Abdolmaleki, M., Kapucinski, R., Sahin, O. "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.  
+   - *Notes*: Invited for INFORMS Annual Meeting (2024).  
+3. Abdolmaleki, M., Momot, R. "Encrypted Personalized Revenue Management." Under preparation for submission.  
+   - *Notes*: Invited for INFORMS Annual Meeting (2024).  
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+### Publications in Transportation Science and Graph Theory
+1. Abdolmaleki, M., Shahabi, M., Yin, Y., Masoud, N. "Itinerary Planning for Cooperative Truck Platooning." *Transportation Research Part B: Methodological* 153 (2021): 91-110.  
+2. Abdolmaleki, M., Masoud, N., Yin, Y. "Transit timetable synchronization for transfer time minimization." *Transportation Research Part B: Methodological* 131 (2020): 143-159.  
+3. Abdolmaleki, M., Masoud, N., Yin, Y. "Vehicle-to-vehicle wireless power transfer: Paving the way toward an electrified transportation system." *Transportation Research Part C: Emerging Technologies* 103 (2019): 261-280.  
+4. Tafreshian, A., Abdolmaleki, M., Masoud, N., Wang, H. "Proactive shuttle dispatching in large-scale dynamic dial-a-ride systems." *Transportation Research Part B: Methodological* 150 (2021): 227-259.  
+5. Sun, X., Wu, H., Abdolmaleki, M., Yin, Y., Zou, B. "Investigating the Potential of Truck Platooning on Energy Savings: an Empirical Study on the US National Highway Freight Network." *Transportation Research Record* (Accepted).  
+6. Abdolmaleki, M., Hutchinson, J.P., Ilchi, S.Gh., Mahmoodian, E.S., Matsumoto, N., Shabani, M.A. "On uniquely k-list colorable planar graphs, graphs on surfaces, and regular graphs." *Graphs and Combinatorics* 34.3 (2018): 383-394.  
+7. Abdolmaleki, M., Yin, Y. "Intersection Control in a Connected and Automated Vehicle Environment: A Unifying Graph Coloring Approach." In preparation.  
+   - *Notes*: Presented at MIT Mobility Initiative (2021).  
+8. Abdolmaleki, M., Ilchi, S.Gh., Mahmoodian, E.S., Shabani, M.A. "On decomposing complete tripartite graphs into 5-cycles." arXiv:1907.06187.  
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+## Teaching Experience
+- **Teaching Assistant, Infrastructure Systems Optimization**, University of Michigan (Fall 2021)  
+- **Teaching Assistant, Transportation Network Modeling**, University of Michigan (Winter 2021)  
+- **Teaching Assistant, Linear Algebra**, Sharif University of Technology (Fall 2015)
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+## Honors and Awards
+- National Interest Waiver (I-140) Approval, USCIS  
+- Rackham Predoctoral Fellowship, University of Michigan (2022)  
+- Member of the Tau Beta Pi Honor Society, University of Michigan (2022)  
+- Third Prize, 23rd International Mathematical Competition for University Students, Bulgaria (2016)  
+- Silver Medal, 40th Iranian Mathematical Society Competition (Ranked 5th) (2016)  
+- Bronze Medal, 29th Iranian National Mathematical Olympiad (2010)
+
+## Selected Presentations
+- "Real-time operations management of networked systems," University of Minnesota ISyE (2023)  
+- "Dynamic joint pricing and empty relocation policies for ride-sourcing systems," INFORMS Annual Meeting (2022)  
+- "Intersection control in a connected and automated vehicle environment: A unifying graph coloring approach," INFORMS Annual Meeting (2021)
+
+## Service
+- **Journals Refereed**: *Management Science*, *Operations Research*, *Transportation Research Part B: Methodological*, *Transportation Research Part E*, *Transportation Research Part C* (2019–Present)  
+- **Session Chair**, INFORMS (2019–2022)  
+- **DEI Committee/K-12 Activities Chair**, Tau Beta Pi Honor Society (2022)  
+- **LeaderShape 2022**, University of Michigan (2022)
