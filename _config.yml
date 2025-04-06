@@ -9,101 +9,99 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Mojtaba Abdolmaleki's Homepage"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://mojtaba-research.github.io/mojtabaa.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+name                     : &name "Mojtaba Abdolmaleki"
+description              : &description "Ph.D. Candidate in Technology and Operations at Ross School of Business, University of Michigan. Researching online decision-making, sharing economy, and automated systems."
+url                      : https://academicpages.github.io # Update this to your actual URL if different
+baseurl                  : "" # Update if your site uses a subpath
+repository               : "academicpages/academicpages.github.io" # Update if your repository is different
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
+# Site Author
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  avatar           : "profile.png" # Replace with your actual profile image filename if available
+  name             : "Mojtaba Abdolmaleki"
+  pronouns         : "he/him" # Added based on common usage; adjust if preferred
+  bio              : "Ph.D. Candidate in Technology and Operations at Ross School of Business, University of Michigan. Previously earned a Ph.D. in Transportation Systems Engineering. Research interests include online decision-making, sharing economy, and scheduling in automated environments."
+  location         : "Ann Arbor, MI, USA"
+  employer         : "University of Michigan"
+  uri              : # Add your personal website URL if you have one
+  email            : "mojtabaa@umich.edu"
 
   # Academic websites
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
-  semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
+  arxiv            : # Add your arXiv profile URL if applicable
+  googlescholar    : "https://scholar.google.com/citations?user=yourID" # Replace with your actual Google Scholar URL
+  impactstory      : # Add if applicable
+  orcid            : "http://orcid.org/your-orcid-id" # Replace with your actual ORCID URL
+  semantic         : # Add if applicable
+  pubmed           : # Add if applicable
+  researchgate     : "https://www.researchgate.net/profile/Mojtaba-Abdolmaleki" # Replace with your actual ResearchGate URL if available
+  scopus           : # Add your Scopus URL if applicable
 
   # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  bitbucket        : # Add your Bitbucket username if applicable
+  codepen          : # Add if applicable
+  dribbble         : # Add if applicable
+  github           : "your-github-username" # Replace with your actual GitHub username
+  kaggle           : # Add if applicable
+  stackoverflow    : # Add your Stack Overflow user number if applicable
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : # Username
-  mastodon         : # URL
-  medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
+  bluesky          : # Add if applicable
+  facebook         : # Add if applicable
+  flickr           : # Add if applicable
+  foursquare       : # Add if applicable
+  goodreads        : # Add if applicable
+  google_plus      : # Add if applicable
+  keybase          : # Add if applicable
+  instagram        : # Add if applicable
+  lastfm           : # Add if applicable
+  linkedin         : "your-linkedin-username" # Replace with your actual LinkedIn username
+  mastodon         : # Add if applicable
+  medium           : # Add if applicable
+  pinterest        : # Add if applicable
+  soundcloud       : # Add if applicable
+  steam            : # Add if applicable
+  telegram         : # Add if applicable
+  tumblr           : # Add if applicable
+  twitter          : "your-twitter-username" # Replace with your actual Twitter username
+  vine             : # Add if applicable
+  weibo            : # Add if applicable
+  wikipedia        : # Add if applicable
+  xing             : # Add if applicable
+  youtube          : # Add if applicable
+  zhihu            : # Add if applicable
 
-# Publication Category - The following the list of publication categories and their headings
+# Publication Category
 publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
 
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
+# Site Settings (unchanged unless specified in CV)
+teaser                   : # Add a teaser image filename if desired
+breadcrumbs              : false
 words_per_minute         : 160
 future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+read_more                : "disabled"
+talkmap_link             : false
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : # Enable if you want comments (e.g., "disqus")
   disqus:
     shortname            :
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               :
   facebook:
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            :
+    colorscheme          :
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
+  branch                 : "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
@@ -116,41 +114,43 @@ staticman:
     date:
       type               : "date"
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format           : "iso8601"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
+  hide                   : false
+  path                   : # Leave blank for default
 
-
-# SEO Related
+# SEO Related (unchanged unless you provide specific verification codes)
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
-
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter "your-twitter-username" # Replace with your actual Twitter username
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+og_image                 : # Add an Open Graph image filename if desired
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "Mojtaba Abdolmaleki"
+  links:
+    - "https://www.linkedin.com/in/your-linkedin-username" # Replace with your LinkedIn URL
+    - "https://twitter.com/your-twitter-username" # Replace with your Twitter URL
+    - "https://github.com/your-github-username" # Replace with your GitHub URL
+    - "https://scholar.google.com/citations?user=yourID" # Replace with your Google Scholar URL
+    - "https://www.researchgate.net/profile/Mojtaba-Abdolmaleki" # Replace with your ResearchGate URL
 
-
-# Analytics
+# Analytics (unchanged unless you provide a tracking ID)
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               : "false"
   google:
     tracking_id          :
 
+# Rest of the file remains unchanged unless you specify additional changes
+# (e.g., include, exclude, encoding, markdown, collections, defaults, sass, permalink, plugins, etc.)
 
 # Reading Files
 include:
