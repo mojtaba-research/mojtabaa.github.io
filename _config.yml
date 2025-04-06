@@ -31,7 +31,7 @@ author:
 
   # Academic websites
   arxiv            : # Add your arXiv profile URL if applicable
-  googlescholar    : "https://scholar.google.com/citations?user=yourID" # Replace with your actual Google Scholar URL
+  googlescholar    : "https://scholar.google.com/citations?user=aiej5cUAAAAJ" # Replace with your actual Google Scholar URL
   impactstory      : # Add if applicable
   orcid            : "http://orcid.org/your-orcid-id" # Replace with your actual ORCID URL
   semantic         : # Add if applicable
@@ -57,7 +57,7 @@ author:
   keybase          : # Add if applicable
   instagram        : # Add if applicable
   lastfm           : # Add if applicable
-  linkedin         : "your-linkedin-username" # Replace with your actual LinkedIn username
+  linkedin         : "https://www.linkedin.com/in/mojtaba-abdolmaleki-142879119/" # Replace with your actual LinkedIn username
   mastodon         : # Add if applicable
   medium           : # Add if applicable
   pinterest        : # Add if applicable
@@ -65,7 +65,7 @@ author:
   steam            : # Add if applicable
   telegram         : # Add if applicable
   tumblr           : # Add if applicable
-  twitter          : "your-twitter-username" # Replace with your actual Twitter username
+  twitter          : "https://x.com/MojtabaAbdolma8" # Replace with your actual Twitter username
   vine             : # Add if applicable
   weibo            : # Add if applicable
   wikipedia        : # Add if applicable
@@ -127,7 +127,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter "your-twitter-username" # Replace with your actual Twitter username
+  username               : &twitter "https://x.com/MojtabaAbdolma8" # Replace with your actual Twitter username
 facebook:
   username               :
   app_id                 :
@@ -137,10 +137,10 @@ social:
   type                   : "Person"
   name                   : "Mojtaba Abdolmaleki"
   links:
-    - "https://www.linkedin.com/in/your-linkedin-username" # Replace with your LinkedIn URL
-    - "https://twitter.com/your-twitter-username" # Replace with your Twitter URL
+    - "https://www.linkedin.com/in/mojtaba-abdolmaleki-142879119/" # Replace with your LinkedIn URL
+    - "https://x.com/MojtabaAbdolma8" # Replace with your Twitter URL
     - "https://github.com/your-github-username" # Replace with your GitHub URL
-    - "https://scholar.google.com/citations?user=yourID" # Replace with your Google Scholar URL
+    - "https://scholar.google.com/citations?user=aiej5cUAAAAJ" # Replace with your Google Scholar URL
     - "https://www.researchgate.net/profile/Mojtaba-Abdolmaleki" # Replace with your ResearchGate URL
 
 # Analytics (unchanged unless you provide a tracking ID)
