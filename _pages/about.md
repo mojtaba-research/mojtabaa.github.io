@@ -9,17 +9,14 @@ redirect_from:
 
 ## About Me
 
-I am Mojtaba Abdolmaleki, a Ph.D. candidate in Technology and Operations at the Ross School of Business, University of Michigan, Ann Arbor. I also hold a Ph.D. in Transportation Systems Engineering (2023) from the same institution, an MSc in Industrial & Operations Engineering (2021), and dual B.Sc. degrees in Mathematics and Civil Engineering (2018) from Sharif University of Technology. As a US Permanent Resident, I am driven by a passion for advancing research at the intersection of operations management and strategic decision-making.
+I am a second year Ph.D. student in T\&O at the Ross School of Business (University of Michigan) where I am advised by Izak Duenyas and Roman Kapuscinski. I am also pursuing an M.S. in Statistics. Previously, I earned a Ph.D. in Transportation Systems Engineering, ann an M.Sc. in Industrial and Operations Engineering from the University of Michigan, and dual B.Sc. degrees in Mathematics and Civil Engineering from Sharif University of Technology.
 
-My current research focuses on designing dynamic experimentation, inspection, and statistical tests in strategic environments—a pursuit that integrates online decision-making, statistical methodologies, and operational efficiency. I leverage tools like stochastic systems analysis, approximation algorithms, online learning, and large deviation analysis to address complex challenges in these areas. My work has been recognized with honors such as the Rackham Predoctoral Fellowship (2022) and membership in the Tau Beta Pi Honor Society.
+My current research focuses on designing dynamic experimentation, inspection, and statistical tests in strategic environments—a pursuit that integrates online decision-making, statistical inference, and operations research. I leverage tools like stochastic systems analysis, approximation algorithms, online learning, and large deviation analysis to address complex challenges in these areas. My work has been recognized with honors such as the Rackham Predoctoral Fellowship (2022) IBM best student paper award finalist (2024).
 
-**Email**: [mojtabaa@umich.edu](mailto:mojtabaa@umich.edu) | **Phone**: +1 (734) 881-5989
-
-This website, built with the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on [GitHub Pages](https://pages.github.com), showcases my academic journey.
 
 ## Education
-- **Ph.D. in Technology and Operations** (2024–present), Ross School of Business, University of Michigan, Ann Arbor  
-- **Ph.D. in Transportation Systems Engineering** (2023), University of Michigan, Ann Arbor  
+- **Ph.D. in Technology and Operations** (2024–present), Ross School of Business, University of Michigan, Ann Arbor  (GPA: 4.1/4.0)
+- **Ph.D. in Transportation Systems Engineering** (2023), University of Michigan, Ann Arbor  (GPA: 4.2/4.0)
 - **MSc in Industrial & Operations Engineering** (2021), University of Michigan, Ann Arbor (GPA: 4.2/4.0)  
 - **B.Sc. in Mathematics and Civil Engineering** (2018), Sharif University of Technology (GPA: 3.92/4.0; Math GPA: 4.0/4.0)
 
