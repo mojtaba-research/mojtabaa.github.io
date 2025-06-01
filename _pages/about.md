@@ -23,21 +23,27 @@ My current research focuses on designing dynamic experimentation, inspection, an
 ## Publications
 
 ### Work in Progress  
-1. Abdolmaleki, M., Chao, X., Radvand, T., Yin, Y. "Joint pricing and delayed empty relocation policies for ride-sourcing systems." Under preparation for submission.  
+1. Abdolmaleki, M., Duenyas, I., Kapuscinski, R. "Dynamic Staged Financing under Asymmetric Information and Inspection." Under preparation.  
+2. Abdolmaleki, M. "Approximation Algorithms and Hardness of Approximation for Itinerary Planning of Cooperative Truck Platooning." Under preparation.
+
+
+### Working Paper  
+1. Abdolmaleki, M., Momot, R. "Encrypted Personalized Revenue Management." Under preparation for submission.  
+   - *Notes*: Invited for INFORMS Annual Meeting (2024).  
+2. Abdolmaleki, M., Chao, X., Radvand, T., Yin, Y. "Joint pricing and delayed empty relocation policies for ride-sourcing systems." Under preparation for submission.  
    - *Notes*: Presented at INFORMS RMP Conference (2024), UCI (2024), NYU Stern (2024), MIT IDSS (2023), UMN ISyE (2023).  
-2. Abdolmaleki, M., Kapucinski, R., Sahin, O. "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.  
-   - *Notes*: Invited for INFORMS Annual Meeting (2024).  
-3. Abdolmaleki, M., Momot, R. "Encrypted Personalized Revenue Management." Under preparation for submission.  
-   - *Notes*: Invited for INFORMS Annual Meeting (2024).  
-4. Radvand, T., Abdolmaleki, M., Mostagir, M., Tewari, A. "Zero-Shot Statistical Tests for LLM-Generated Text Detection using Finite Sample Concentration Inequalities." Under preparation.  
+3. Radvand, T., Abdolmaleki, M., Mostagir, M., Tewari, A. "Zero-Shot Statistical Tests for LLM-Generated Text Detection using Finite Sample Concentration Inequalities." Under preparation.  
    - *Notes*: Co-junior mentorship.  
      Best Presentation Award at MSSISS 2025.  
      Featured in Paris Women in Machine Learning and Data Science (WiMLDS) Weekly Captures.  
      To be presented – Revenue Management and Pricing (RMP) Conference, Columbia University, 2025.  
      Presentation – MSSISS Conference [Invited], University of Michigan, 2025.  
      [GitHub Repository](https://github.com/TaraRadvand74/llm-text-detection) | Live Demo: [tararadvand.com](https://tararadvand.com)  
-5. Abdolmaleki, M., Duenyas, I., Kapuscinski, R. "Dynamic Staged Financing under Asymmetric Information and Inspection." Under preparation.  
-6. Abdolmaleki, M. "Approximation Algorithms and Hardness of Approximation for Itinerary Planning of Cooperative Truck Platooning." Under preparation.
+
+4. Abdolmaleki, M., Kapucinski, R., Sahin, O. "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.  
+   - *Notes*: Invited for INFORMS Annual Meeting (2024).  
+
+
 
 
 ### Publications in Transportation Science and Graph Theory
