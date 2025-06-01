@@ -29,7 +29,8 @@ My current research focuses on designing dynamic experimentation, inspection, an
 
 ### Working Paper  
 1. Abdolmaleki, M., Momot, R. "Encrypted Personalized Revenue Management." Under preparation for submission.  
-   - *Notes*: Invited for INFORMS Annual Meeting (2024).  
+   - *Notes*: Invited for INFORMS Annual Meeting (2024).
+     Finalist IBM student paper award.  
 2. Abdolmaleki, M., Chao, X., Radvand, T., Yin, Y. "Joint pricing and delayed empty relocation policies for ride-sourcing systems." Under preparation for submission.  
    - *Notes*: Presented at INFORMS RMP Conference (2024), UCI (2024), NYU Stern (2024), MIT IDSS (2023), UMN ISyE (2023).  
 3. Radvand, T., Abdolmaleki, M., Mostagir, M., Tewari, A. "Zero-Shot Statistical Tests for LLM-Generated Text Detection using Finite Sample Concentration Inequalities." Under preparation.  
