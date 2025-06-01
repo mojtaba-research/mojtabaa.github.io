@@ -29,17 +29,17 @@ My current research focuses on designing dynamic experimentation, inspection, an
 
 ### Working Paper  
 1. Abdolmaleki, M., Momot, R. "Encrypted Personalized Revenue Management." Under preparation for submission.  
-   - *Notes*: Invited for INFORMS Annual Meeting (2024).
-     Finalist IBM student paper award.  
+   - *Award*: Finalist IBM student paper award.  
+   Invited for INFORMS Annual Meeting (2024).
+     
 2. Abdolmaleki, M., Chao, X., Radvand, T., Yin, Y. "Joint pricing and delayed empty relocation policies for ride-sourcing systems." Under preparation for submission.  
-   - *Notes*: Presented at INFORMS RMP Conference (2024), UCI (2024), NYU Stern (2024), MIT IDSS (2023), UMN ISyE (2023).  
+   - *Presentation*: INFORMS RMP Conference (2024), UCI (2024), NYU Stern (2024), MIT IDSS (2023), UMN ISyE (2023).  
 3. Abdolmaleki, M., Yin, Y. "Intersection Control in a Connected and Automated Vehicle Environment: A Unifying Graph Coloring Approach." In preparation.  
-   - *Notes*: Presented at MIT Mobility Initiative (2021).  
+   - *Presentation*: MIT Mobility Initiative (2021).  
 4. Radvand, T., Abdolmaleki, M., Mostagir, M., Tewari, A. "Zero-Shot Statistical Tests for LLM-Generated Text Detection using Finite Sample Concentration Inequalities." Under preparation.  
-   - *Notes*: Junior mentorship.   
-     [GitHub Repository](https://github.com/TaraRadvand74/llm-text-detection) | Live Demo: [tararadvand.com](https://tararadvand.com)  
+   - *Junior mentorship*. [GitHub Repository](https://github.com/TaraRadvand74/llm-text-detection) | [Live Demo](https://huggingface.co/spaces/tararad/Liketropy-LLM-Detector)  
 5. Abdolmaleki, M., Kapucinski, R., Sahin, O. "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.  
-   - *Notes*: Invited for INFORMS Annual Meeting (2024).  
+   - *Presentation*: Invited for INFORMS Annual Meeting (2024). INFORMS RMP Conference (2025)
 
 
 
