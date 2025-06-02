@@ -13,6 +13,9 @@ I am a second year Ph.D. student in T&O at the Ross School of Business (Universi
 
 My research focuses on developing dynamic experimentation frameworks, inspection mechanisms, and statistical testing methods in strategic and uncertain environments. I integrate techniques from online decision-making, statistical inference, and operations research—drawing on tools such as stochastic systems analysis, approximation algorithms, online learning, and large deviation theory. My work also extends to applications in online decision-making, the sharing economy, and automated systems, where I have published several studies. My work has been recognized with honors such as IBM best student paper award finalist (2024) and the Rackham Predoctoral Fellowship (2022).
 
+## Residency
+
+I hold U.S. permanent residency (Green Card).
 
 ## Education
 - **Ph.D. in Technology and Operations** (2024–present), Ross School of Business, University of Michigan, Ann Arbor  (GPA: 4.1/4.0)
