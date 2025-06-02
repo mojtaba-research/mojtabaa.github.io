@@ -37,7 +37,8 @@ My current research focuses on designing dynamic experimentation, inspection, an
 10. Abdolmaleki, M., Yin, Y. "Intersection Control in a Connected and Automated Vehicle Environment: A Unifying Graph Coloring Approach." In preparation.  
    - *Presentation*: MIT Mobility Initiative (2021).  
 9. Radvand, T., Abdolmaleki, M., Mostagir, M., Tewari, A. "Zero-Shot Statistical Tests for LLM-Generated Text Detection using Finite Sample Concentration Inequalities." Under preparation.  
-   - *Junior Mentorship*.  [GitHub Repository](https://github.com/TaraRadvand74/llm-text-detection) | [Live Demo](https://huggingface.co/spaces/tararad/Liketropy-LLM-Detector)  
+   - *Junior Mentorship*.  
+   [GitHub Repository](https://github.com/TaraRadvand74/llm-text-detection) | [Live Demo](https://huggingface.co/spaces/tararad/Liketropy-LLM-Detector)  
 8. Abdolmaleki, M., Kapucinski, R., Sahin, O. "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.  
    - *Presentation*: Invited for INFORMS Annual Meeting (2024). INFORMS RMP Conference (2025)
 
