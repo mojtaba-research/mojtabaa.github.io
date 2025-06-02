@@ -23,45 +23,7 @@ My current research focuses on designing dynamic experimentation, inspection, an
 ## Publications
 
 ### Work in Progress  
-14. Abdolmaleki, M., Duenyas, I., Kapuscinski, R. "Dynamic Staged Financing under Asymmetric Information and Inspection." Under preparation.  
-13. Abdolmaleki, M. "Approximation Algorithms and Hardness of Approximation for Itinerary Planning of Cooperative Truck Platooning." Under preparation.
-
-
-### Working Paper  
-12. Abdolmaleki, M., Momot, R. "Encrypted Personalized Revenue Management." Under preparation for submission.  
-   - *Award*: Finalist IBM student paper award.  
-   Invited for INFORMS Annual Meeting (2024).
-     
-11. Abdolmaleki, M., Chao, X., Radvand, T., Yin, Y. "Joint pricing and delayed empty relocation policies for ride-sourcing systems." Under preparation for submission.  
-   - *Presentation*: INFORMS RMP Conference (2024), UCI (2024), NYU Stern (2024), MIT IDSS (2023), UMN ISyE (2023).  
-10. Abdolmaleki, M., Yin, Y. "Intersection Control in a Connected and Automated Vehicle Environment: A Unifying Graph Coloring Approach." In preparation.  
-   - *Presentation*: MIT Mobility Initiative (2021).  
-9. Radvand, T., Abdolmaleki, M., Mostagir, M., Tewari, A. "Zero-Shot Statistical Tests for LLM-Generated Text Detection using Finite Sample Concentration Inequalities." Under preparation.  
-   - *Junior Mentorship*.  
-   [GitHub Repository](https://github.com/TaraRadvand74/llm-text-detection) | [Live Demo](https://huggingface.co/spaces/tararad/Liketropy-LLM-Detector)  
-8. Abdolmaleki, M., Kapucinski, R., Sahin, O. "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.  
-   - *Presentation*: Invited for INFORMS Annual Meeting (2024). INFORMS RMP Conference (2025)
-
-
-
-
-
-
-### Publications in Transportation Science and Graph Theory
-7. Abdolmaleki, M., Shahabi, M., Yin, Y., Masoud, N. "Itinerary Planning for Cooperative Truck Platooning." *Transportation Research Part B: Methodological* 153 (2021): 91-110.  
-6. Abdolmaleki, M., Masoud, N., Yin, Y. "Transit timetable synchronization for transfer time minimization." *Transportation Research Part B: Methodological* 131 (2020): 143-159.  
-5. Abdolmaleki, M., Masoud, N., Yin, Y. "Vehicle-to-vehicle wireless power transfer: Paving the way toward an electrified transportation system." *Transportation Research Part C: Emerging Technologies* 103 (2019): 261-280.  
-4. Tafreshian, A., Abdolmaleki, M., Masoud, N., Wang, H. "Proactive shuttle dispatching in large-scale dynamic dial-a-ride systems." *Transportation Research Part B: Methodological* 150 (2021): 227-259.  
-3. Sun, X., Wu, H., Abdolmaleki, M., Yin, Y., Zou, B. "Investigating the Potential of Truck Platooning on Energy Savings: an Empirical Study on the US National Highway Freight Network." *Transportation Research Record* (Accepted).  
-2. Abdolmaleki, M., Hutchinson, J.P., Ilchi, S.Gh., Mahmoodian, E.S., Matsumoto, N., Shabani, M.A. "On uniquely k-list colorable planar graphs, graphs on surfaces, and regular graphs." *Graphs and Combinatorics* 34.3 (2018): 383-394.  
-1. Abdolmaleki, M., Ilchi, S.Gh., Mahmoodian, E.S., Shabani, M.A. "On decomposing complete tripartite graphs into 5-cycles." arXiv:1907.06187.  
-
-
-
-## Publications
-
-### Work in Progress  
-<ol reversed>
+<ol reversed start="14">
   <li>Abdolmaleki, M., Duenyas, I., Kapuscinski, R. "Dynamic Staged Financing under Asymmetric Information and Inspection." Under preparation.</li>
   <li>Abdolmaleki, M. "Approximation Algorithms and Hardness of Approximation for Itinerary Planning of Cooperative Truck Platooning." Under preparation.</li>
 </ol>
@@ -83,8 +45,7 @@ My current research focuses on designing dynamic experimentation, inspection, an
   </li>
   <li>
     Radvand, T., Abdolmaleki, M., Mostagir, M., Tewari, A. "Zero-Shot Statistical Tests for LLM-Generated Text Detection using Finite Sample Concentration Inequalities." Under preparation.<br>
-    <em>Junior Mentorship</em><br>
-    <a href="https://github.com/TaraRadvand74/llm-text-detection">GitHub Repository</a> | <a href="https://huggingface.co/spaces/tararad/Liketropy-LLM-Detector">Live Demo</a>
+    <em>Junior Mentorship</em><br> <a href="https://github.com/TaraRadvand74/llm-text-detection">GitHub Repository</a> | <a href="https://huggingface.co/spaces/tararad/Liketropy-LLM-Detector">Live Demo</a>
   </li>
   <li>
     Abdolmaleki, M., Kapucinski, R., Sahin, O. "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.<br>
