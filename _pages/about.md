@@ -50,7 +50,7 @@ My current research focuses on designing dynamic experimentation, inspection, an
   </li>
   <li>
     <strong>Abdolmaleki, M.</strong>, Sahin, O., Kapucinski, R.  "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.<br>
-    <em>Presentation:</em> Invited for INFORMS Annual Meeting (2024). INFORMS RMP Conference (2025)
+    <em>Presentation:</em> INFORMS RMP Conference (2025). Invited for INFORMS Annual Meeting (2024).
   </li>
 </ol>
 
