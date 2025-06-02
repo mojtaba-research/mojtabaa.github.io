@@ -9,9 +9,9 @@ redirect_from:
 
 ## About Me
 
-I am a second year Ph.D. student in T\&O at the Ross School of Business (University of Michigan) where I am advised by Izak Duenyas and Roman Kapuscinski. I am also pursuing an M.S. in Statistics. Previously, I earned a Ph.D. in Transportation Systems Engineering, ann an M.Sc. in Industrial and Operations Engineering from the University of Michigan, and dual B.Sc. degrees in Mathematics and Civil Engineering from Sharif University of Technology.
+I am a second year Ph.D. student in T&O at the Ross School of Business (University of Michigan) where I am advised by Izak Duenyas and Roman Kapuscinski. I am also pursuing an M.S. in Statistics. Previously, I earned a Ph.D. in Transportation Systems Engineering, and an M.Sc. in Industrial and Operations Engineering from the University of Michigan, and dual B.Sc. degrees in Mathematics and Civil Engineering from Sharif University of Technology.
 
-My current research focuses on designing dynamic experimentation, inspection, and statistical tests in strategic environments—a pursuit that integrates online decision-making, statistical inference, and operations research. I leverage tools like stochastic systems analysis, approximation algorithms, online learning, and large deviation analysis to address complex challenges in these areas. My work has been recognized with honors such as the Rackham Predoctoral Fellowship (2022) IBM best student paper award finalist (2024).
+My current research focuses on designing dynamic experimentation, inspection, and statistical tests in strategic environments. My research integrates online decision-making, statistical inference, and operations research, leveraging tools like stochastic systems analysis, approximation algorithms, online learning, and large deviation analysis. My work has been recognized with honors such as IBM best student paper award finalist (2024) and the Rackham Predoctoral Fellowship (2022).
 
 
 ## Education
@@ -49,13 +49,13 @@ My current research focuses on designing dynamic experimentation, inspection, an
     <em>Junior Mentorship</em><br> <a href="https://github.com/TaraRadvand74/llm-text-detection">GitHub Repository</a> | <a href="https://huggingface.co/spaces/tararad/Liketropy-LLM-Detector">Live Demo</a>
   </li>
   <li>
-    <strong>Abdolmaleki, M.</strong>, Kapucinski, R., Sahin, O. "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.<br>
+    <strong>Abdolmaleki, M.</strong>, Sahin, O., Kapucinski, R.  "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.<br>
     <em>Presentation:</em> Invited for INFORMS Annual Meeting (2024). INFORMS RMP Conference (2025)
   </li>
 </ol>
 
 
-### Publications in Transportation Science and Graph Theory  
+### Published Papers 
 <ol reversed start="7">
   <li><strong>Abdolmaleki, M.</strong>, Shahabi, M., Yin, Y., Masoud, N. "Itinerary Planning for Cooperative Truck Platooning." <em>Transportation Research Part B: Methodological</em> 153 (2021): 91-110.</li>
   <li><strong>Abdolmaleki, M.</strong>, Masoud, N., Yin, Y. "Transit timetable synchronization for transfer time minimization." <em>Transportation Research Part B: Methodological</em> 131 (2020): 143-159.</li>
