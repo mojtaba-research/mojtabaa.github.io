@@ -77,17 +77,13 @@ My current research focuses on designing dynamic experimentation, inspection, an
 - **Teaching Assistant, Linear Algebra**, Sharif University of Technology (Fall 2015)
 
 ## Honors and Awards
+- IBM best student paper award finalist (2024) 
 - National Interest Waiver (I-140) Approval, USCIS  
 - Rackham Predoctoral Fellowship, University of Michigan (2022)  
 - Member of the Tau Beta Pi Honor Society, University of Michigan (2022)  
 - Third Prize, 23rd International Mathematical Competition for University Students, Bulgaria (2016)  
 - Silver Medal, 40th Iranian Mathematical Society Competition (Ranked 5th) (2016)  
 - Bronze Medal, 29th Iranian National Mathematical Olympiad (2010)
-
-## Selected Presentations
-- "Real-time operations management of networked systems," University of Minnesota ISyE (2023)  
-- "Dynamic joint pricing and empty relocation policies for ride-sourcing systems," INFORMS Annual Meeting (2022)  
-- "Intersection control in a connected and automated vehicle environment: A unifying graph coloring approach," INFORMS Annual Meeting (2021)
 
 ## Service
 - **Journals Refereed**: *Management Science*, *Operations Research*, *Transportation Research Part B: Methodological*, *Transportation Research Part E*, *Transportation Research Part C* (2019–Present)  
