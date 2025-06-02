@@ -11,7 +11,7 @@ redirect_from:
 
 I am a second year Ph.D. student in T&O at the Ross School of Business (University of Michigan) where I am advised by Izak Duenyas and Roman Kapuscinski. I am also pursuing an M.S. in Statistics. Previously, I earned a Ph.D. in Transportation Systems Engineering, and an M.Sc. in Industrial and Operations Engineering from the University of Michigan, and dual B.Sc. degrees in Mathematics and Civil Engineering from Sharif University of Technology.
 
-My current research focuses on designing dynamic experimentation, inspection, and statistical tests in strategic environments. My research integrates online decision-making, statistical inference, and operations research, leveraging tools like stochastic systems analysis, approximation algorithms, online learning, and large deviation analysis. My work has been recognized with honors such as IBM best student paper award finalist (2024) and the Rackham Predoctoral Fellowship (2022).
+My research focuses on developing dynamic experimentation frameworks, inspection mechanisms, and statistical testing methods in strategic and uncertain environments. I integrate techniques from online decision-making, statistical inference, and operations research—drawing on tools such as stochastic systems analysis, approximation algorithms, online learning, and large deviation theory. My work also extends to applications in online decision-making, the sharing economy, and automated systems, where I have published several studies. My work has been recognized with honors such as IBM best student paper award finalist (2024) and the Rackham Predoctoral Fellowship (2022).
 
 
 ## Education
