@@ -24,45 +24,48 @@ My current research focuses on designing dynamic experimentation, inspection, an
 
 ### Work in Progress  
 <ol reversed start="14">
-  <li>Abdolmaleki, M., Duenyas, I., Kapuscinski, R. "Dynamic Staged Financing under Asymmetric Information and Inspection." Under preparation.</li>
-  <li>Abdolmaleki, M. "Approximation Algorithms and Hardness of Approximation for Itinerary Planning of Cooperative Truck Platooning." Under preparation.</li>
+  <li><strong>Abdolmaleki, M.</strong>, Duenyas, I., Kapuscinski, R. "Dynamic Staged Financing under Asymmetric Information and Inspection." Under preparation.</li>
+  <li><strong>Abdolmaleki, M.</strong> "Approximation Algorithms and Hardness of Approximation for Itinerary Planning of Cooperative Truck Platooning." Under preparation.</li>
 </ol>
+
 
 ### Working Paper  
 <ol reversed start="12">
   <li>
-    Abdolmaleki, M., Momot, R. "Encrypted Personalized Revenue Management." Under preparation for submission.<br>
+    <strong>Abdolmaleki, M.</strong>, Momot, R. "Encrypted Personalized Revenue Management." Under preparation for submission.<br>
     <em>Award:</em> Finalist IBM student paper award.<br>
     Invited for INFORMS Annual Meeting (2024).
   </li>
   <li>
-    Abdolmaleki, M., Chao, X., Radvand, T., Yin, Y. "Joint pricing and delayed empty relocation policies for ride-sourcing systems." Under preparation for submission.<br>
+    <strong>Abdolmaleki, M.</strong>, Chao, X., Radvand, T., Yin, Y. "Joint pricing and delayed empty relocation policies for ride-sourcing systems." Under preparation for submission.<br>
     <em>Presentation:</em> INFORMS RMP Conference (2024), UCI (2024), NYU Stern (2024), MIT IDSS (2023), UMN ISyE (2023).
   </li>
   <li>
-    Abdolmaleki, M., Yin, Y. "Intersection Control in a Connected and Automated Vehicle Environment: A Unifying Graph Coloring Approach." In preparation.<br>
+    <strong>Abdolmaleki, M.</strong>, Yin, Y. "Intersection Control in a Connected and Automated Vehicle Environment: A Unifying Graph Coloring Approach." In preparation.<br>
     <em>Presentation:</em> MIT Mobility Initiative (2021).
   </li>
   <li>
-    Radvand, T., Abdolmaleki, M., Mostagir, M., Tewari, A. "Zero-Shot Statistical Tests for LLM-Generated Text Detection using Finite Sample Concentration Inequalities." Under preparation.<br>
+    Radvand, T., <strong>Abdolmaleki, M.</strong>, Mostagir, M., Tewari, A. "Zero-Shot Statistical Tests for LLM-Generated Text Detection using Finite Sample Concentration Inequalities." Under preparation.<br>
     <em>Junior Mentorship</em><br> <a href="https://github.com/TaraRadvand74/llm-text-detection">GitHub Repository</a> | <a href="https://huggingface.co/spaces/tararad/Liketropy-LLM-Detector">Live Demo</a>
   </li>
   <li>
-    Abdolmaleki, M., Kapucinski, R., Sahin, O. "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.<br>
+    <strong>Abdolmaleki, M.</strong>, Kapucinski, R., Sahin, O. "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.<br>
     <em>Presentation:</em> Invited for INFORMS Annual Meeting (2024). INFORMS RMP Conference (2025)
   </li>
 </ol>
 
+
 ### Publications in Transportation Science and Graph Theory  
 <ol reversed start="7">
-  <li>Abdolmaleki, M., Shahabi, M., Yin, Y., Masoud, N. "Itinerary Planning for Cooperative Truck Platooning." <em>Transportation Research Part B: Methodological</em> 153 (2021): 91-110.</li>
-  <li>Abdolmaleki, M., Masoud, N., Yin, Y. "Transit timetable synchronization for transfer time minimization." <em>Transportation Research Part B: Methodological</em> 131 (2020): 143-159.</li>
-  <li>Abdolmaleki, M., Masoud, N., Yin, Y. "Vehicle-to-vehicle wireless power transfer: Paving the way toward an electrified transportation system." <em>Transportation Research Part C: Emerging Technologies</em> 103 (2019): 261-280.</li>
-  <li>Tafreshian, A., Abdolmaleki, M., Masoud, N., Wang, H. "Proactive shuttle dispatching in large-scale dynamic dial-a-ride systems." <em>Transportation Research Part B: Methodological</em> 150 (2021): 227-259.</li>
-  <li>Sun, X., Wu, H., Abdolmaleki, M., Yin, Y., Zou, B. "Investigating the Potential of Truck Platooning on Energy Savings: an Empirical Study on the US National Highway Freight Network." <em>Transportation Research Record</em> (Accepted).</li>
-  <li>Abdolmaleki, M., Hutchinson, J.P., Ilchi, S.Gh., Mahmoodian, E.S., Matsumoto, N., Shabani, M.A. "On uniquely k-list colorable planar graphs, graphs on surfaces, and regular graphs." <em>Graphs and Combinatorics</em> 34.3 (2018): 383-394.</li>
-  <li>Abdolmaleki, M., Ilchi, S.Gh., Mahmoodian, E.S., Shabani, M.A. "On decomposing complete tripartite graphs into 5-cycles." <a href="https://arxiv.org/abs/1907.06187">arXiv:1907.06187</a>.</li>
+  <li><strong>Abdolmaleki, M.</strong>, Shahabi, M., Yin, Y., Masoud, N. "Itinerary Planning for Cooperative Truck Platooning." <em>Transportation Research Part B: Methodological</em> 153 (2021): 91-110.</li>
+  <li><strong>Abdolmaleki, M.</strong>, Masoud, N., Yin, Y. "Transit timetable synchronization for transfer time minimization." <em>Transportation Research Part B: Methodological</em> 131 (2020): 143-159.</li>
+  <li><strong>Abdolmaleki, M.</strong>, Masoud, N., Yin, Y. "Vehicle-to-vehicle wireless power transfer: Paving the way toward an electrified transportation system." <em>Transportation Research Part C: Emerging Technologies</em> 103 (2019): 261-280.</li>
+  <li>Tafreshian, A., <strong>Abdolmaleki, M.</strong>, Masoud, N., Wang, H. "Proactive shuttle dispatching in large-scale dynamic dial-a-ride systems." <em>Transportation Research Part B: Methodological</em> 150 (2021): 227-259.</li>
+  <li>Sun, X., Wu, H., <strong>Abdolmaleki, M.</strong>, Yin, Y., Zou, B. "Investigating the Potential of Truck Platooning on Energy Savings: an Empirical Study on the US National Highway Freight Network." <em>Transportation Research Record</em> (Accepted).</li>
+  <li><strong>Abdolmaleki, M.</strong>, Hutchinson, J.P., Ilchi, S.Gh., Mahmoodian, E.S., Matsumoto, N., Shabani, M.A. "On uniquely k-list colorable planar graphs, graphs on surfaces, and regular graphs." <em>Graphs and Combinatorics</em> 34.3 (2018): 383-394.</li>
+  <li><strong>Abdolmaleki, M.</strong>, Ilchi, S.Gh., Mahmoodian, E.S., Shabani, M.A. "On decomposing complete tripartite graphs into 5-cycles." <a href="https://arxiv.org/abs/1907.06187">arXiv:1907.06187</a>.</li>
 </ol>
+
 
 
 
