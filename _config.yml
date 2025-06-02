@@ -13,7 +13,7 @@ title                    : "Mojtaba Abdolmaleki's Homepage"
 title_separator          : "-"
 name                     : &name "Mojtaba Abdolmaleki"
 description              : &description "Ph.D. Student in Technology and Operations at Ross School of Business, University of Michigan."
-url                      : https://mojtaba-research.github.io/mojtabaa.github.io/ # Update this to your actual URL if different
+#url                      : https://mojtaba-research.github.io/mojtabaa.github.io/ # Update this to your actual URL if different
 baseurl                  : "" # Update if your site uses a subpath
 repository               : "academicpages/academicpages.github.io" # Update if your repository is different
 
