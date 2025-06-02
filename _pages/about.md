@@ -86,7 +86,6 @@ My current research focuses on designing dynamic experimentation, inspection, an
 - Bronze Medal, 29th Iranian National Mathematical Olympiad (2010)
 
 ## Service
-- **Journals Refereed**: *Management Science*, *Operations Research*, *Transportation Research Part B: Methodological*, *Transportation Research Part E*, *Transportation Research Part C* (2019–Present)  
+- **Journals Refereed**: *Management Science*, *Operations Research*, *Transportation Research Part B, C, & E* (2019–Present)  
 - **Session Chair**, INFORMS (2019–2022)  
 - **DEI Committee/K-12 Activities Chair**, Tau Beta Pi Honor Society (2022)  
-- **LeaderShape 2022**, University of Michigan (2022)
