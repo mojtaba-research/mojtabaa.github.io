@@ -81,7 +81,6 @@ I hold U.S. permanent residency (Green Card).
 
 ## Honors and Awards
 - IBM best student paper award finalist (2024) 
-- National Interest Waiver (I-140) Approval, USCIS  
 - Rackham Predoctoral Fellowship, University of Michigan (2022)  
 - Member of the Tau Beta Pi Honor Society, University of Michigan (2022)  
 - Third Prize, 23rd International Mathematical Competition for University Students, Bulgaria (2016)  
