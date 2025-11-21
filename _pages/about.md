@@ -11,7 +11,7 @@ redirect_from:
 
 I am a second year Ph.D. student in T&O at the Ross School of Business (University of Michigan) where I am advised by Izak Duenyas and Roman Kapuscinski. I am also pursuing an M.S. in Statistics. Previously, I earned a Ph.D. in Transportation Systems Engineering, and an M.Sc. in Industrial and Operations Engineering from the University of Michigan, and dual B.Sc. degrees in Mathematics and Civil Engineering from Sharif University of Technology.
 
-My research centers on data-driven decision-making in operations management under uncertainty and operational barriers. These barriers take different forms across application areas. For instance, in revenue management, personalized pricing is challenging because customer privacy constraints restrict access to granular data, limiting the ability to learn customer features and make tailored recommendations. In other settings, consumer search itself acts as an operational barrier, where firms must design policies that leverage search behavior to segment the market and improve revenue. In project design, conflicts of interest between employees (executing parties) and employers (funding agencies) make trust an operational barrier that hinders efficiency, as employers must rely on unverified information while balancing decisions about continuous monitoring and targeted inspections. And in transportation systems, complex network structures create barriers that require dynamic, real-time decision-making to effectively manage flows and enhance system performance. Across these settings, I develop dynamic policies, inspection mechanisms, and experimentation frameworks by integrating tools from online decision-making, statistical inference, and operations research. My work has been recognized with honors such as IBM best student paper award finalist (2024) and the Rackham Predoctoral Fellowship (2022).
+My research centers on data-driven decision-making in operations management under uncertainty and operational barriers. These barriers appear in different forms across application areas. In revenue management, privacy constraints create informational barriers, limiting access to granular data and hindering the learning of customer features needed for personalized pricing. In other settings, consumer search frictions act as behavioral or market-structure barriers, shaping how firms design policies that leverage search behavior to segment markets and improve revenue. In project design, principal–agent conflicts and unverifiable information introduce incentive barriers, as employers must balance trust, monitoring, and targeted inspections when relying on agents’ self-reported progress. And in transportation systems, complex network structures pose structural and computational barriers, requiring dynamic, real-time decision-making to manage flows and enhance system performance. Across these settings, I develop dynamic policies, inspection mechanisms, and experimentation frameworks by integrating tools from stochastic control, online learning, statistical inference, and operations research. My work has been recognized with honors such as IBM best student paper award finalist (2024) and the Rackham Predoctoral Fellowship (2022).
 
 ## Residency
 
@@ -36,12 +36,12 @@ unobservable agent progress." Under preparation.</li>
 ### Working Paper  
 <ol reversed start="12">
   <li>
-    <strong>Abdolmaleki, M.</strong>, Momot, R. "Encrypted Personalized Revenue Management." Under preparation for submission.<br>
+    <strong>Abdolmaleki, M.</strong>, Momot, R. "Encrypted Personalized Revenue Management." Major revision at Management Science.<br>
     <em>Award:</em> Finalist IBM student paper award.<br>
     Invited for INFORMS Annual Meeting (2024).
   </li>
   <li>
-    <strong>Abdolmaleki, M.</strong>, Chao, X., Radvand, T., Yin, Y. "Joint pricing and delayed empty relocation policies for ride-sourcing systems." Under preparation for submission.<br>
+    <strong>Abdolmaleki, M.</strong>, Chao, X., Radvand, T., Yin, Y. "Joint pricing and delayed empty relocation policies for ride-sourcing systems." R&R at Management Science.<br>
     <em>Presentation:</em> INFORMS RMP Conference (2024), UCI (2024), NYU Stern (2024), MIT IDSS (2023), UMN ISyE (2023).
   </li>
   <li>
@@ -49,12 +49,12 @@ unobservable agent progress." Under preparation.</li>
     <em>Presentation:</em> MIT Mobility Initiative (2021).
   </li>
   <li>
-    Radvand, T., <strong>Abdolmaleki, M.</strong>, Mostagir, M., Tewari, A. "Zero-Shot Statistical Tests for LLM-Generated Text Detection using Finite Sample Concentration Inequalities." Under preparation.<br>
-    <em>Junior Mentorship</em><br> <a href="https://github.com/TaraRadvand74/llm-text-detection">GitHub Repository</a> | <a href="https://huggingface.co/spaces/tararad/Liketropy-LLM-Detector">Live Demo</a>
-  </li>
-  <li>
     <strong>Abdolmaleki, M.</strong>, Sahin, O., Kapucinski, R.  "Price Restraining Policies and Search Costs: Economic Analysis and Implications." Under preparation.<br>
     <em>Presentation:</em> INFORMS RMP Conference (2025). Invited for INFORMS Annual Meeting (2024).
+  </li>
+  <li>
+    Radvand, T., <strong>Abdolmaleki, M.</strong>, Mostagir, M., Tewari, A. "Zero-Shot Statistical Tests for LLM-Generated Text Detection using Finite Sample Concentration Inequalities." Under preparation.<br>
+    <em>Junior Mentorship</em><br> <a href="https://github.com/TaraRadvand74/llm-text-detection">GitHub Repository</a> | <a href="https://huggingface.co/spaces/tararad/Liketropy-LLM-Detector">Live Demo</a>
   </li>
 </ol>
 
