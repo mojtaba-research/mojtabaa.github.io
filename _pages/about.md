@@ -27,7 +27,7 @@ I hold U.S. permanent residency (Green Card).
 
 ### Work in Progress  
 <ol reversed start="14">
-  <li><strong>Abdolmaleki, M.</strong>, Duenyas, I., Kapuscinski, R. "Contracting for multi-stage projects under
+  <li><strong>Abdolmaleki, M.</strong>, Duenyas, I., Kapuscinski, R., Taylor, C., "Contracting for multi-stage projects under
 unobservable agent progress." Under preparation.</li>
   <li><strong>Abdolmaleki, M.</strong> "Approximation Algorithms and Hardness of Approximation for Itinerary Planning of Cooperative Truck Platooning." Under preparation.</li>
 </ol>
