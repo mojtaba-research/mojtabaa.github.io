@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>normsinv() Calculator</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      margin: 0; padding: 24px;
+    }
+    .wrap { max-width: 520px; margin: 0 auto; }
+    h1 { margin: 0 0 12px; font-size: 24px; }
+    label { display: block; font-weight: 600; margin: 12px 0 6px; }
+    input {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid #bbb;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid #bbb;
+      background: #f3f3f3;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .out {
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      background: #fafafa;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 16px;
+    }
+    .error { color: #b00020; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>normsinv() Calculator</h1>
+
+    <label for="pInput">Input</label>
+    <input id="pInput" type="number" inputmode="decimal" step="any" value="0.975" />
+
+    <button id="calcBtn" type="button">Calculate normsinv</button>
+
+    <div id="out" class="out">—</div>
+  </div>
+
+<script>
+  // Inverse standard normal CDF (aka NORM.S.INV / normsinv).
+  // IMPORTANT: This function is ONLY defined for probabilities 0 < p < 1.
+  // Negative inputs (or p<=0 or p>=1) will return an error message.
+  function normsinv(p) {
+    if (!(p > 0 && p < 1) || Number.isNaN(p)) return NaN;
+
+    // Peter J. Acklam's approximation
+    const a = [-3.969683028665376e+01,  2.209460984245205e+02, -2.759285104469687e+02,
+               1.383577518672690e+02, -3.066479806614716e+01,  2.506628277459239e+00];
+    const b = [-5.447609879822406e+01,  1.615858368580409e+02, -1.556989798598866e+02,
+               6.680131188771972e+01, -1.328068155288572e+01];
+    const c = [-7.784894002430293e-03, -3.223964580411365e-01, -2.400758277161838e+00,
+               -2.549732539343734e+00,  4.374664141464968e+00,  2.938163982698783e+00];
+    const d = [ 7.784695709041462e-03,  3.224671290700398e-01,  2.445134137142996e+00,
+                3.754408661907416e+00];
+
+    const plow = 0.02425;
+    const phigh = 1 - plow;
+
+    let q, r;
+
+    if (p < plow) {
+      q = Math.sqrt(-2 * Math.log(p));
+      return (((((c[0]*q + c[1])*q + c[2])*q + c[3])*q + c[4])*q + c[5]) /
+             ((((d[0]*q + d[1])*q + d[2])*q + d[3])*q + 1);
+    }
+
+    if (p > phigh) {
+      q = Math.sqrt(-2 * Math.log(1 - p));
+      return -(((((c[0]*q + c[1])*q + c[2])*q + c[3])*q + c[4])*q + c[5]) /
+               ((((d[0]*q + d[1])*q + d[2])*q + d[3])*q + 1);
+    }
+
+    q = p - 0.5;
+    r = q * q;
+    return (((((a[0]*r + a[1])*r + a[2])*r + a[3])*r + a[4])*r + a[5]) * q /
+           (((((b[0]*r + b[1])*r + b[2])*r + b[3])*r + b[4])*r + 1);
+  }
+
+  function format(x) {
+    if (!Number.isFinite(x)) return "Invalid input (normsinv requires 0 < p < 1)";
+    return String(Number(x.toPrecision(12)));
+  }
+
+  function calculate() {
+    const p = Number(document.getElementById("pInput").value);
+    const z = normsinv(p);
+    const out = document.getElementById("out");
+    out.classList.toggle("error", !Number.isFinite(z));
+    out.textContent = format(z);
+  }
+
+  document.getElementById("calcBtn").addEventListener("click", calculate);
+  calculate();
+</script>
+</body>
+</html>
