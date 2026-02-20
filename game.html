@@ -363,7 +363,19 @@
     nextBtn.textContent = (round >= TOTAL_ROUNDS) ? "🏁 Final" : "Next Round →";
 
 
-    const delay = (round <= 4) ? 7000 : 3000;
+    let delay;
+
+    if (round === 1) {
+    delay = 10000;      // 10 seconds for first round
+    } else if (round <= 4) {
+    delay = 7000;       // 7 seconds for rounds 2–4
+    } else {
+    delay = 3000;       // 3 seconds for rounds 5–8
+    }
+
+
+
+
     // Auto-advance after 3 seconds
     if (autoNextTimer) clearTimeout(autoNextTimer);
     autoNextTimer = setTimeout(() => {
