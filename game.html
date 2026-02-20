@@ -229,7 +229,7 @@
   const COST = 1.24;
   const PRICE = 2.49;
   const SALVAGE = 0.99;
-  const TOTAL_ROUNDS = 10;
+  const TOTAL_ROUNDS = 8;
 
   let round = 1;
   let totalProfit = 0;
@@ -366,7 +366,7 @@
     if (autoNextTimer) clearTimeout(autoNextTimer);
     autoNextTimer = setTimeout(() => {
       nextRound();
-    }, 3000);
+    }, 5000);
   }
 
 
