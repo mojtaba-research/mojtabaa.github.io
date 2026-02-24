@@ -161,7 +161,7 @@
   <div id="mm_app">
     <div class="container">
       <div class="title">
-        <img src="macaron.png" alt="macaron"
+        <img src="images/macaron.png" alt="macaron"
              style="width:96px; height:auto; vertical-align:middle; margin-right:10px; filter: drop-shadow(0 10px 18px rgba(17,24,39,.12));">
         Le Bon Macaroon
       </div>
@@ -282,8 +282,7 @@
   let history = [];
   let currentResult = null;
 
-  let fixedOrder = null;      // locked-in order for all rounds
-  let autoNextTimer = null;   // timer for advancing
+
 
   const roundEl = el("mm_round");
   const totalEl = el("mm_total");
@@ -346,16 +345,7 @@
   }
 
   function placeOrder() {
-    // Lock the order the first time only
-    if (fixedOrder === null) {
-      fixedOrder = Math.max(0, parseInt(orderInput.value || "0", 10));
-      // prevent changes after locking
-      orderInput.disabled = true;
-      el("mm_minus").disabled = true;
-      el("mm_plus").disabled = true;
-    }
-
-    const order = fixedOrder;
+    const order = Math.max(0, parseInt(orderInput.value || "0", 10));
 
     placeBtn.disabled = true;
     placeBtn.textContent = "Rolling...";
@@ -416,30 +406,12 @@
 
     nextBtn.textContent = (round >= TOTAL_ROUNDS) ? "🏁 Final" : "Next Round →";
 
-    let delay;
-    if (round === 1) {
-      delay = 12000;
-    } else if (round <= 4) {
-      delay = 7000;
-    } else {
-      delay = 3000;
-    }
 
-    // Auto-advance
-    if (autoNextTimer) clearTimeout(autoNextTimer);
-    autoNextTimer = setTimeout(() => {
-      nextRound();
-    }, delay);
   }
 
   function nextRound() {
+    orderInput.value = 10;
     history.push(currentResult);
-
-    // stop any pending timer so manual clicks don't double-advance
-    if (autoNextTimer) {
-      clearTimeout(autoNextTimer);
-      autoNextTimer = null;
-    }
 
     if (round >= TOTAL_ROUNDS) {
       showFinished();
@@ -449,13 +421,11 @@
     round++;
     roundEl.textContent = `${round} / ${TOTAL_ROUNDS}`;
 
-    // roll again immediately
+    // go back to ordering screen so student can set a NEW quantity
     swapCards(resultScreen, orderingScreen);
 
     placeBtn.disabled = false;
     placeBtn.textContent = "🎲 Place Order & Roll";
-
-    placeOrder();
   }
 
   function showFinished() {
@@ -473,17 +443,7 @@
     // clear table
     clearHistoryTable();
 
-    // clear locked order and stop auto-advance timer
-    fixedOrder = null;
-    if (autoNextTimer) {
-      clearTimeout(autoNextTimer);
-      autoNextTimer = null;
-    }
 
-    // re-enable order controls
-    orderInput.disabled = false;
-    el("mm_minus").disabled = false;
-    el("mm_plus").disabled = false;
 
     roundEl.textContent = "1 / " + TOTAL_ROUNDS;
     updateTotal();
