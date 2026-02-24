@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Bon Macaron (PMF + Hover Areas)</title>
+  <style>
+    /* Root id for isolation on a normal website */
+    #mm_app {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      --bg1:#fff7ed;
+      --bg2:#fdf2f8;
+      --ink:#111827;
+      --muted:#6b7280;
+      --line:rgba(17,24,39,.10);
+      --accent:#db2777;
+      --accent2:#f59e0b;
+
+      color: var(--ink);
+      background: radial-gradient(1200px 500px at 15% 10%, var(--bg2), transparent 55%),
+                  radial-gradient(1000px 420px at 90% 0%, var(--bg1), transparent 60%),
+                  linear-gradient(180deg, #ffffff, #ffffff);
+      padding: 22px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.7);
+      box-shadow: 0 18px 50px rgba(17,24,39,.08);
+    }
+    #mm_app .container { max-width: 720px; margin: 0 auto; }
+
+    #mm_app .title {
+      font-size: 2rem; font-weight: 900; color: var(--ink);
+      text-align: center; margin: 6px 0 6px;
+      letter-spacing: -0.03em;
+    }
+    #mm_app .title::after {
+      content:"";
+      display:block;
+      width: 84px;
+      height: 4px;
+      margin: 10px auto 0;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(219,39,119,.9), rgba(245,158,11,.9));
+      opacity: .9;
+    }
+    #mm_app .subtitle { color: var(--muted); text-align: center; margin-bottom: 14px; font-size: 14px; }
+
+    #mm_app .card {
+      background: rgba(255,255,255,.78);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 1px 0 rgba(255,255,255,.8) inset,
+                  0 10px 30px rgba(17,24,39,.08);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: opacity .16s ease, transform .16s ease;
+      margin-bottom: 12px;
+    }
+    #mm_app .card.is-exiting { opacity: 0; transform: translateY(6px); }
+
+    #mm_app .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; text-align: center; }
+    #mm_app .price-box { padding: 10px; border-radius: 10px; border: 1px solid var(--line); background: rgba(255,255,255,.6); }
+    #mm_app .price-box.cost { color: #b91c1c; }
+    #mm_app .price-box.sell { color: #15803d; }
+    #mm_app .price-box.salvage { color: #b45309; }
+    #mm_app .price-label { font-weight: 800; font-size: 12px; margin-bottom: 4px; color: rgba(17,24,39,.65); letter-spacing:.02em; }
+    #mm_app .price-value { font-weight: 900; font-size: 1.25rem; letter-spacing:-0.02em; }
+
+    #mm_app .status-bar { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 15px; }
+    #mm_app .round-text { color: #db2777; font-weight: 900; }
+    #mm_app .profit-positive { color: #16a34a; font-weight: 900; }
+    #mm_app .profit-negative { color: #dc2626; font-weight: 900; }
+    #mm_app .heading { font-size: 1.05rem; font-weight: 900; color: #111827; text-align: center; margin-bottom: 10px; }
+
+    #mm_app .order-controls { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 10px 0 12px; }
+    #mm_app .round-btn {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: rgba(17,24,39,.06);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      box-shadow: 0 6px 16px rgba(17,24,39,.08);
+      font-weight: 900; font-size: 22px;
+      cursor: pointer;
+      transition: transform .12s ease, background .12s ease;
+    }
+    #mm_app .round-btn:hover { background: rgba(17,24,39,.10); transform: translateY(-1px); }
+    #mm_app .round-btn:active { transform: translateY(0); }
+
+    #mm_app .order-input {
+      width: 90px; text-align: center; font-size: 2rem; font-weight: 900;
+      border: 1px solid var(--line);
+      border-radius: 10px; padding: 6px;
+      background: rgba(255,255,255,.9);
+      box-shadow: 0 1px 0 rgba(255,255,255,.7) inset;
+      outline: none;
+    }
+    #mm_app .order-input:focus {
+      border-color: rgba(219,39,119,.45);
+      box-shadow: 0 0 0 4px rgba(219,39,119,.12);
+    }
+    #mm_app .cost-text { text-align: center; color: #6b7280; margin-bottom: 10px; }
+
+    #mm_app .main-btn {
+      width: 100%; padding: 14px;
+      background: linear-gradient(90deg, #ec4899 0%, #f59e0b 100%);
+      color: white; font-size: 1.05rem; font-weight: 900;
+      border-radius: 12px; border: none; cursor: pointer;
+      box-shadow: 0 10px 20px rgba(17,24,39,.10);
+      transform: translateY(0);
+      transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+    }
+    #mm_app .main-btn:hover { transform: translateY(-1px); box-shadow: 0 14px 28px rgba(17,24,39,.12); opacity: 0.96; }
+    #mm_app .main-btn:active { transform: translateY(0); box-shadow: 0 8px 16px rgba(17,24,39,.10); }
+    #mm_app .main-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    #mm_app .dice-container { display: flex; justify-content: center; gap: 12px; margin: 10px 0; }
+    #mm_app .dice {
+      width: 60px; height: 60px; background: white; border-radius: 10px;
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 30px rgba(17,24,39,.10);
+      position: relative;
+    }
+    #mm_app .dot { position: absolute; width: 11px; height: 11px; background: rgba(17,24,39,.85); border-radius: 50%; transform: translate(-50%, -50%); }
+
+    #mm_app .demand-text { text-align: center; font-size: 1.25rem; font-weight: 900; color: #111827; margin: 8px 0 10px; }
+    #mm_app .result-box { background: #f9fafb; border-radius: 10px; padding: 12px; margin-bottom: 10px; }
+    #mm_app .result-row { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+    #mm_app .result-value { font-weight: 800; text-align: right; }
+    #mm_app .text-green { color: #16a34a; }
+    #mm_app .text-amber { color: #b45309; }
+    #mm_app .text-red { color: #dc2626; }
+    #mm_app .text-gray { color: #9ca3af; }
+    #mm_app .divider { border: none; border-top: 1px solid #e5e7eb; margin: 10px 0; }
+    #mm_app .profit-row { display: flex; justify-content: space-between; font-size: 1.1rem; font-weight: 900; gap: 12px; }
+    #mm_app .hidden { display: none; }
+
+    /* PMF panel */
+    #mm_app .pmf-wrap { display:flex; justify-content:center; }
+    #mm_app canvas {
+      width: 100%; max-width: 640px; border-radius: 14px; background: #fff; display:block;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 26px rgba(17,24,39,.08);
+    }
+    #mm_app .readout { margin-top: 10px; text-align: center; font-size: 14px; font-weight: 800; color:#111827; line-height:1.35; }
+    #mm_app .pill { display: inline-block; padding: 6px 10px; margin: 4px 6px 0 0; border-radius: 999px; border: 1px solid #e5e7eb; background: rgba(17,24,39,.04); }
+
+    /* History table styling */
+    #mm_app #mm_history_table th,
+    #mm_app #mm_history_table td {
+      border-bottom: 1px solid rgba(17,24,39,.08);
+      padding: 8px 6px;
+      white-space: nowrap;
+    }
+    #mm_app #mm_history_table tbody tr:hover {
+      background: rgba(17,24,39,.03);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mm_app">
+    <div class="container">
+      <div class="title">
+        <img src="macaron.png" alt="macaron"
+             style="width:96px; height:auto; vertical-align:middle; margin-right:10px; filter: drop-shadow(0 10px 18px rgba(17,24,39,.12));">
+        Le Bon Macaroon
+      </div>
+
+      <div class="subtitle">Demand = sum of 3 dice (3–18)</div>
+
+      <div class="card">
+        <div class="price-grid">
+          <div class="price-box cost">
+            <div class="price-label">Cost</div>
+            <div class="price-value">$1.24</div>
+          </div>
+          <div class="price-box sell">
+            <div class="price-label">Sell Price</div>
+            <div class="price-value">$2.49</div>
+          </div>
+          <div class="price-box salvage">
+            <div class="price-label">Salvage</div>
+            <div class="price-value">$0.99</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="heading">Demand distribution (PMF)</div>
+        <div class="pmf-wrap">
+          <canvas id="mm_pmf" width="640" height="260"></canvas>
+        </div>
+        <div class="readout" id="mm_readout">Move your mouse over the bars…</div>
+      </div>
+
+      <div class="card">
+        <div class="status-bar">
+          <div>
+            <span style="font-weight:800; color:#374151;">Round:</span>
+            <span class="round-text" id="mm_round">1 / 15</span>
+          </div>
+          <div>
+            <span style="font-weight:800; color:#374151;">Total Profit:</span>
+            <span id="mm_total" class="profit-positive">$0.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="mm_ordering">
+        <div class="heading">Order quantity</div>
+        <div class="order-controls">
+          <button class="round-btn" id="mm_minus">-</button>
+          <input type="number" id="mm_order" class="order-input" value="10" min="0">
+          <button class="round-btn" id="mm_plus">+</button>
+        </div>
+        <div class="cost-text">Order cost: <span id="mm_cost" style="font-weight:900;">$12.40</span></div>
+        <button class="main-btn" id="mm_place">🎲 Place Order & Roll</button>
+      </div>
+
+      <div class="card hidden" id="mm_result">
+        <div class="dice-container" id="mm_dice"></div>
+        <div class="demand-text" id="mm_demand">Demand: 0</div>
+        <div class="result-box" id="mm_details"></div>
+        <button class="main-btn" id="mm_next">Next Round →</button>
+      </div>
+
+      <div class="card hidden" id="mm_finished">
+        <div class="heading">🏁 Finished</div>
+        <div class="demand-text" id="mm_final">Total Profit: $0.00</div>
+        <button class="main-btn" id="mm_reset">🔄 Play Again</button>
+      </div>
+
+      <!-- HISTORY TABLE -->
+      <div class="card" id="mm_history_card">
+        <div class="heading">Round History</div>
+
+        <div style="overflow:auto;">
+          <table id="mm_history_table" style="width:100%; border-collapse:collapse; font-size:13px;">
+            <thead>
+              <tr style="text-align:left; border-bottom:1px solid rgba(17,24,39,.12);">
+                <th style="padding:8px 6px;">Round</th>
+                <th style="padding:8px 6px;">Ordered</th>
+                <th style="padding:8px 6px;">Demand</th>
+                <th style="padding:8px 6px;">Sold</th>
+                <th style="padding:8px 6px;">Leftover</th>
+                <th style="padding:8px 6px;">Lost</th>
+                <th style="padding:8px 6px;">Revenue</th>
+                <th style="padding:8px 6px;">Cost</th>
+                <th style="padding:8px 6px;">Profit</th>
+                <th style="padding:8px 6px;">Total</th>
+              </tr>
+            </thead>
+            <tbody id="mm_history_body"></tbody>
+          </table>
+        </div>
+
+        <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
+          <button class="main-btn" id="mm_clear_history" style="width:auto; padding:10px 12px;">
+            🧹 Clear Table
+          </button>
+          <button class="main-btn" id="mm_export_csv" style="width:auto; padding:10px 12px;">
+            ⬇️ Export CSV
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<script>
+(() => {
+  const ROOT = document.getElementById("mm_app");
+  const el = (id) => ROOT.querySelector("#" + id);
+
+  const COST = 1.24;
+  const PRICE = 2.49;
+  const SALVAGE = 0.99;
+  const TOTAL_ROUNDS = 15;
+
+  let round = 1;
+  let totalProfit = 0;
+  let history = [];
+  let currentResult = null;
+
+  let fixedOrder = null;      // locked-in order for all rounds
+  let autoNextTimer = null;   // timer for advancing
+
+  const roundEl = el("mm_round");
+  const totalEl = el("mm_total");
+  const orderingScreen = el("mm_ordering");
+  const resultScreen = el("mm_result");
+  const finishedScreen = el("mm_finished");
+
+  const orderInput = el("mm_order");
+  const costOut = el("mm_cost");
+  const placeBtn = el("mm_place");
+  const nextBtn = el("mm_next");
+  const resetBtn = el("mm_reset");
+
+  const diceContainer = el("mm_dice");
+  const demandText = el("mm_demand");
+  const detailsBox = el("mm_details");
+  const finalBox = el("mm_final");
+
+  // History elements
+  const historyBody = el("mm_history_body");
+  const clearHistoryBtn = el("mm_clear_history");
+  const exportCsvBtn = el("mm_export_csv");
+
+  function rollDie() { return Math.floor(Math.random() * 6) + 1; }
+
+  function renderDice(values) {
+    const dotPositions = {
+      1: [[50, 50]],
+      2: [[25, 25], [75, 75]],
+      3: [[25, 25], [50, 50], [75, 75]],
+      4: [[25, 25], [75, 25], [25, 75], [75, 75]],
+      5: [[25, 25], [75, 25], [50, 50], [25, 75], [75, 75]],
+      6: [[25, 25], [75, 25], [25, 50], [75, 50], [25, 75], [75, 75]]
+    };
+    diceContainer.innerHTML = values.map(val => {
+      const dots = dotPositions[val].map(pos =>
+        `<div class="dot" style="left:${pos[0]}%; top:${pos[1]}%;"></div>`
+      ).join('');
+      return `<div class="dice">${dots}</div>`;
+    }).join('');
+  }
+
+  function updateCost() {
+    const q = Math.max(0, parseInt(orderInput.value || "0", 10));
+    costOut.textContent = "$" + (q * COST).toFixed(2);
+  }
+
+  function updateTotal() {
+    totalEl.textContent = "$" + totalProfit.toFixed(2);
+    totalEl.className = totalProfit >= 0 ? "profit-positive" : "profit-negative";
+  }
+
+  function swapCards(hideEl, showEl) {
+    hideEl.classList.add("is-exiting");
+    setTimeout(() => {
+      hideEl.classList.add("hidden");
+      hideEl.classList.remove("is-exiting");
+      showEl.classList.remove("hidden");
+    }, 120);
+  }
+
+  function placeOrder() {
+    // Lock the order the first time only
+    if (fixedOrder === null) {
+      fixedOrder = Math.max(0, parseInt(orderInput.value || "0", 10));
+      // prevent changes after locking
+      orderInput.disabled = true;
+      el("mm_minus").disabled = true;
+      el("mm_plus").disabled = true;
+    }
+
+    const order = fixedOrder;
+
+    placeBtn.disabled = true;
+    placeBtn.textContent = "Rolling...";
+
+    let rollCount = 0;
+    const iv = setInterval(() => {
+      renderDice([rollDie(), rollDie(), rollDie()]);
+      rollCount++;
+      if (rollCount >= 10) {
+        clearInterval(iv);
+
+        const dice = [rollDie(), rollDie(), rollDie()];
+        renderDice(dice);
+        const demand = dice[0] + dice[1] + dice[2];
+
+        const sold = Math.min(order, demand);
+        const leftover = Math.max(0, order - demand);
+        const unmet = Math.max(0, demand - order);
+
+        const revenue = sold * PRICE + leftover * SALVAGE;
+        const cost = order * COST;
+        const profit = revenue - cost;
+
+        currentResult = { order, demand, sold, leftover, unmet, revenue, cost, profit };
+        showResult();
+      }
+    }, 90);
+  }
+
+  function showResult() {
+    swapCards(orderingScreen, resultScreen);
+
+    const r = currentResult;
+    demandText.textContent = `Demand: ${r.demand}`;
+
+    let html = `
+      <div class="result-row"><span>Ordered</span><span class="result-value">${r.order}</span></div>
+      <div class="result-row"><span>Sold</span><span class="result-value text-green">${r.sold} × $${PRICE.toFixed(2)} = $${(r.sold*PRICE).toFixed(2)}</span></div>
+    `;
+    if (r.leftover > 0) {
+      html += `<div class="result-row"><span>Leftover</span><span class="result-value text-amber">${r.leftover} × $${SALVAGE.toFixed(2)} = $${(r.leftover*SALVAGE).toFixed(2)}</span></div>`;
+    }
+    if (r.unmet > 0) {
+      html += `<div class="result-row"><span>Lost sales</span><span class="result-value text-gray">${r.unmet}</span></div>`;
+    }
+    html += `
+      <div class="result-row"><span>Cost</span><span class="result-value text-red">-$${(r.order*COST).toFixed(2)}</span></div>
+      <hr class="divider">
+      <div class="profit-row ${r.profit >= 0 ? "text-green" : "text-red"}"><span>Round Profit</span><span>$${r.profit.toFixed(2)}</span></div>
+    `;
+    detailsBox.innerHTML = html;
+
+    totalProfit += r.profit;
+    updateTotal();
+
+    // Append a row to the table
+    appendHistoryRow(round, r, r.revenue, r.cost, r.profit, totalProfit);
+
+    nextBtn.textContent = (round >= TOTAL_ROUNDS) ? "🏁 Final" : "Next Round →";
+
+    let delay;
+    if (round === 1) {
+      delay = 12000;
+    } else if (round <= 4) {
+      delay = 7000;
+    } else {
+      delay = 3000;
+    }
+
+    // Auto-advance
+    if (autoNextTimer) clearTimeout(autoNextTimer);
+    autoNextTimer = setTimeout(() => {
+      nextRound();
+    }, delay);
+  }
+
+  function nextRound() {
+    history.push(currentResult);
+
+    // stop any pending timer so manual clicks don't double-advance
+    if (autoNextTimer) {
+      clearTimeout(autoNextTimer);
+      autoNextTimer = null;
+    }
+
+    if (round >= TOTAL_ROUNDS) {
+      showFinished();
+      return;
+    }
+
+    round++;
+    roundEl.textContent = `${round} / ${TOTAL_ROUNDS}`;
+
+    // roll again immediately
+    swapCards(resultScreen, orderingScreen);
+
+    placeBtn.disabled = false;
+    placeBtn.textContent = "🎲 Place Order & Roll";
+
+    placeOrder();
+  }
+
+  function showFinished() {
+    swapCards(resultScreen, finishedScreen);
+    finalBox.textContent = `Total Profit: $${totalProfit.toFixed(2)}`;
+    finalBox.className = "demand-text " + (totalProfit >= 0 ? "text-green" : "text-red");
+  }
+
+  function resetGame() {
+    round = 1;
+    totalProfit = 0;
+    history = [];
+    currentResult = null;
+
+    // clear table
+    clearHistoryTable();
+
+    // clear locked order and stop auto-advance timer
+    fixedOrder = null;
+    if (autoNextTimer) {
+      clearTimeout(autoNextTimer);
+      autoNextTimer = null;
+    }
+
+    // re-enable order controls
+    orderInput.disabled = false;
+    el("mm_minus").disabled = false;
+    el("mm_plus").disabled = false;
+
+    roundEl.textContent = "1 / " + TOTAL_ROUNDS;
+    updateTotal();
+
+    finishedScreen.classList.add("hidden");
+    resultScreen.classList.add("hidden");
+    orderingScreen.classList.remove("hidden");
+
+    orderInput.value = 10;
+    updateCost();
+
+    placeBtn.disabled = false;
+    placeBtn.textContent = "🎲 Place Order & Roll";
+  }
+
+  el("mm_minus").addEventListener("click", () => {
+    orderInput.value = Math.max(0, (parseInt(orderInput.value || "0", 10) - 1));
+    updateCost();
+  });
+  el("mm_plus").addEventListener("click", () => {
+    orderInput.value = Math.max(0, (parseInt(orderInput.value || "0", 10) + 1));
+    updateCost();
+  });
+  orderInput.addEventListener("input", updateCost);
+  placeBtn.addEventListener("click", placeOrder);
+  nextBtn.addEventListener("click", nextRound);
+  resetBtn.addEventListener("click", resetGame);
+
+  clearHistoryBtn.addEventListener("click", () => {
+    history = [];
+    totalProfit = 0;
+    updateTotal();
+    clearHistoryTable();
+  });
+  exportCsvBtn.addEventListener("click", exportHistoryCSV);
+
+  function buildPmfCdf3Dice() {
+    const pmf = Array(19).fill(0);
+    let total = 0;
+    for (let a=1; a<=6; a++) for (let b=1; b<=6; b++) for (let c=1; c<=6; c++) {
+      pmf[a+b+c] += 1; total += 1;
+    }
+    for (let d=3; d<=18; d++) pmf[d] /= total;
+
+    const cdf = Array(19).fill(0);
+    let cum = 0;
+    for (let d=3; d<=18; d++) { cum += pmf[d]; cdf[d] = cum; }
+    return { pmf, cdf };
+  }
+
+  function initPMF() {
+    const { pmf, cdf } = buildPmfCdf3Dice();
+    const canvas = el("mm_pmf");
+    const ctx = canvas.getContext("2d");
+    const readout = el("mm_readout");
+
+    const W = canvas.width, H = canvas.height;
+    const padL = 42, padR = 14, padT = 14, padB = 34;
+    const xMin = 3, xMax = 18;
+    const plotW = W - padL - padR;
+    const plotH = H - padT - padB;
+
+    const maxP = Math.max(...pmf.slice(3,19));
+    const yToPx = (p) => padT + (1 - (p / (maxP * 1.1))) * plotH;
+    const xToPx = (x) => padL + (x - xMin) * (plotW / (xMax - xMin));
+    const pxToX = (px) => xMin + (px - padL) * ((xMax - xMin) / plotW);
+
+    const barStep = plotW / (xMax - xMin + 1);
+    const barW = barStep * 0.82;
+
+    function draw(hoverQ=null) {
+      ctx.clearRect(0,0,W,H);
+
+      ctx.fillStyle = "rgba(249,250,251,1)";
+      ctx.fillRect(padL, padT, plotW, plotH);
+
+      ctx.strokeStyle = "rgba(17,24,39,0.25)";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(padL, padT);
+      ctx.lineTo(padL, padT+plotH);
+      ctx.lineTo(padL+plotW, padT+plotH);
+      ctx.stroke();
+
+      ctx.fillStyle = "rgba(17,24,39,0.65)";
+      ctx.font = "12px system-ui, sans-serif";
+      for (let d=3; d<=18; d+=3) ctx.fillText(String(d), xToPx(d)-4, padT+plotH+20);
+
+      if (hoverQ !== null) {
+        const q = Math.min(18, Math.max(3, hoverQ));
+        const xQ = xToPx(q);
+
+        ctx.fillStyle = "rgba(16,185,129,0.10)";
+        ctx.fillRect(padL, padT, (xQ - padL) + barStep/2, plotH);
+
+        ctx.fillStyle = "rgba(239,68,68,0.08)";
+        ctx.fillRect((xQ + barStep/2), padT, (padL+plotW) - (xQ + barStep/2), plotH);
+      }
+
+      for (let d=3; d<=18; d++) {
+        const xCenter = xToPx(d);
+        const x = xCenter - barW/2;
+        const y = yToPx(pmf[d]);
+        const h = (padT+plotH) - y;
+
+        if (hoverQ !== null) {
+          const q = Math.min(18, Math.max(3, hoverQ));
+          ctx.fillStyle = (d <= q) ? "rgba(16,185,129,0.35)" : "rgba(239,68,68,0.28)";
+        } else {
+          ctx.fillStyle = "rgba(236,72,153,0.25)";
+        }
+        ctx.fillRect(x, y, barW, h);
+
+        ctx.strokeStyle = "rgba(17,24,39,0.12)";
+        ctx.strokeRect(x, y, barW, h);
+      }
+
+      if (hoverQ !== null) {
+        const q = Math.min(18, Math.max(3, hoverQ));
+        const x = xToPx(q);
+
+        ctx.strokeStyle = "rgba(236,72,153,0.95)";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(x, padT);
+        ctx.lineTo(x, padT+plotH);
+        ctx.stroke();
+
+        ctx.fillStyle = "rgba(236,72,153,1)";
+        ctx.beginPath();
+        ctx.arc(x, yToPx(pmf[q]), 4, 0, Math.PI*2);
+        ctx.fill();
+      }
+    }
+
+    function setReadout(q) {
+      const p_le = cdf[q];
+      const p_gt = 1 - p_le;
+      readout.innerHTML =
+        `<span class="pill">q = ${q}</span>` +
+        `<span class="pill">P(demand ≤ ${q}) = ${(p_le*100).toFixed(1)}%</span>` +
+        `<span class="pill">P(demand > ${q}) = ${(p_gt*100).toFixed(1)}%</span>`;
+    }
+
+    draw(null);
+    readout.textContent = "Move your mouse over the bars…";
+
+    canvas.addEventListener("mousemove", (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const px = (e.clientX - rect.left) * (canvas.width / rect.width);
+      const q = Math.round(pxToX(px));
+      const qq = Math.min(18, Math.max(3, q));
+      draw(qq);
+      setReadout(qq);
+    });
+
+    canvas.addEventListener("mouseleave", () => {
+      draw(null);
+      readout.textContent = "Move your mouse over the bars…";
+    });
+  }
+
+  // ============================
+  // HISTORY TABLE FUNCTIONS
+  // ============================
+
+  function money(x) { return "$" + Number(x).toFixed(2); }
+
+  function appendHistoryRow(roundNum, r, revenue, cost, profit, runningTotal) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${roundNum}</td>
+      <td>${r.order}</td>
+      <td>${r.demand}</td>
+      <td>${r.sold}</td>
+      <td>${r.leftover}</td>
+      <td>${r.unmet}</td>
+      <td>${money(revenue)}</td>
+      <td>${money(cost)}</td>
+      <td class="${profit >= 0 ? "text-green" : "text-red"}">${money(profit)}</td>
+      <td class="${runningTotal >= 0 ? "text-green" : "text-red"}">${money(runningTotal)}</td>
+    `;
+    historyBody.appendChild(tr);
+  }
+
+  function clearHistoryTable() {
+    historyBody.innerHTML = "";
+  }
+
+  function exportHistoryCSV() {
+    const rows = [
+      ["Round","Ordered","Demand","Sold","Leftover","Lost","Revenue","Cost","Profit","Total"]
+    ];
+
+    let running = 0;
+    history.forEach((r, idx) => {
+      running += r.profit;
+      rows.push([
+        idx + 1,
+        r.order,
+        r.demand,
+        r.sold,
+        r.leftover,
+        r.unmet,
+        r.revenue.toFixed(2),
+        r.cost.toFixed(2),
+        r.profit.toFixed(2),
+        running.toFixed(2)
+      ]);
+    });
+
+    const csv = rows.map(r => r.join(",")).join("\n");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "le_bon_macaron_history.csv";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  requestAnimationFrame(() => {
+    updateCost();
+    initPMF();
+  });
+})();
+</script>
+</body>
+</html>
